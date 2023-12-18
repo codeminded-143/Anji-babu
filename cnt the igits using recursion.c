@@ -1,16 +1,13 @@
 //24137
 #include<stdio.h>
-int cll(int n,int c){
-	while(n!=0){
-		int n1 = n%10;
-		c++;
-		n/=10;
-	}return c;
+int cll(int num){
+	if(num == 0)return 0;
+	return 1+cll(num/10);
 }
 int main()
 {
-	int n,c = 0;
+	int n;
 	scanf("%d",&n);
-	cll(n,c);
-	printf("%d",cll(n,c));
+	cll(n);
+	printf("%d",cll(n));
 }
