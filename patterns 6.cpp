@@ -4,7 +4,7 @@ int main(){
     scanf("%d",&n);
    
     for(i = 1;i<=n;i++){// if i runs one time j runs n times
-        ch = 1; // entering into the loop starts with 1
+        ch = 1; // while entering into the loop it starts with 1
         for(j = n;j>=i;j--){
             printf("%d",ch);
             ch++;
